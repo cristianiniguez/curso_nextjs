@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev:inspect": "cross-env NODE_OPTIONS='--inspect' next",
     "dev": "next",
     "build": "next build",
     "start": "next start"
@@ -12,6 +13,7 @@
   "author": "cristianiniguez <felizpc1@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "cross-env": "^7.0.2",
     "next": "^10.0.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
