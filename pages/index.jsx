@@ -12,13 +12,12 @@ const Home = () => {
       });
   }, []);
   return (
-    <div>
-      <Navbar />
+    <main>
       <h1>Hola Cristian</h1>
       {producList.map((product) => (
         <div>{product.name}</div>
       ))}
-    </div>
+    </main>
   );
 };
 

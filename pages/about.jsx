@@ -3,10 +3,9 @@ import Navbar from '../components/Navbar/Navbar';
 
 const About = () => {
   return (
-    <div>
-      <Navbar />
+    <main>
       <p>Esta es la página de About</p>
-    </div>
+    </main>
   );
 };
 
