@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Navbar from '../components/Navbar/Navbar';
 
 const Home = () => {
   const [producList, setProducList] = useState([]);
