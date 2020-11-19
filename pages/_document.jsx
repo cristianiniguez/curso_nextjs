@@ -5,15 +5,11 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          {/* favicon */}
-          {/* webfonts */}
-          {/* stylesheets */}
-          {/* scripts */}
+          <title>Platzi Avo 🥑</title>
         </Head>
         <body className='my-body-class'>
           <Main />
           <NextScript />
-          {/* elementos adicionales */}
         </body>
       </Html>
     );
