@@ -15,8 +15,13 @@ const Home = ({ productList }) => {
   return (
     <main>
       <section>
-        <div className='container p-4'>
-          <h1 className='text-center'>Platzi Avo 🥑</h1>
+        <div className='container p-4 text-center'>
+          <h1>Platzi Avo 🥑</h1>
+          <p>
+            <Link href='yes-no'>
+              <a>Should I eat and Avo today?</a>
+            </Link>
+          </p>
           <div className='grid m-4'>
             {productList.map((product) => (
               <div key={product.id}>
