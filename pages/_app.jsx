@@ -2,6 +2,10 @@ import Layout from '@components/Layout';
 
 import 'bootswatch/dist/sandstone/bootstrap.min.css';
 
+export const reportWebVitals = (metric) => {
+  // console.log(metric);
+};
+
 function MyApp({ Component, pageProps }) {
   return (
     <Layout>
