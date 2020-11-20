@@ -1,21 +1,24 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Link from 'next/link';
 import axios from 'axios';
 
-const Home = () => {
-  const [producList, setProducList] = useState([]);
-  useEffect(() => {
-    axios.get('/api/avo').then(({ data }) => {
-      setProducList(data);
-    });
-  }, []);
+export const getServerSideProps = async () => {
+  const { data: productList } = await axios.get('https://curso-nextjs-chi.vercel.app/api/avo');
+  return {
+    props: {
+      productList,
+    },
+  };
+};
+
+const Home = ({ productList }) => {
   return (
     <main>
       <section>
         <div className='container p-4'>
           <h1 className='text-center'>Platzi Avo 🥑</h1>
           <div className='grid m-4'>
-            {producList.map((product) => (
+            {productList.map((product) => (
               <div key={product.id}>
                 <Link href={`/product/${product.id}`}>
                   <a className='card text-body text-decoration-none'>
