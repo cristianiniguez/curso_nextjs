@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import axios from 'axios';
 
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
   const { data: productList } = await axios.get('https://curso-nextjs-chi.vercel.app/api/avo');
   return {
     props: {
@@ -18,7 +18,7 @@ const Home = ({ productList }) => {
         <div className='container p-4 text-center'>
           <h1>Platzi Avo 🥑</h1>
           <p>
-            <Link href='yes-no'>
+            <Link href='/yes-no'>
               <a>Should I eat and Avo today?</a>
             </Link>
           </p>
