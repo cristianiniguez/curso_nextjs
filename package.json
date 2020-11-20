@@ -1,7 +1,7 @@
 {
   "name": "platzi_avo",
   "version": "1.0.0",
-  "description": "",
+  "description": "Proyecto del Curso de Next.js de Platzi",
   "main": "index.js",
   "scripts": {
     "dev:inspect": "cross-env NODE_OPTIONS='--inspect' next",
@@ -12,7 +12,7 @@
   },
   "keywords": [],
   "author": "cristianiniguez <felizpc1@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "axios": "^0.21.0",
     "bootswatch": "^4.5.3",
@@ -20,5 +20,14 @@
     "next": "^10.0.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cristianiniguez/curso_nextjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cristianiniguez/curso_nextjs/issues"
+  },
+  "homepage": "https://curso-nextjs-chi.vercel.app"
 }
