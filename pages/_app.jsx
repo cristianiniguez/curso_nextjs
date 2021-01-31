@@ -1,6 +1,6 @@
 import Layout from '@components/Layout';
 
-import 'bootswatch/dist/sandstone/bootstrap.min.css';
+import 'bootswatch/dist/journal/bootstrap.min.css';
 
 function MyApp({ Component, pageProps }) {
   return (
